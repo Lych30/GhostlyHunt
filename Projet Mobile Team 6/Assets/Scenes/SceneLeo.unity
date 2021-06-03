@@ -523,11 +523,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
---- !u!82 &320286797 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 899361026970206312, guid: e29e416488fc400468766199fd844d5f, type: 3}
-  m_PrefabInstance: {fileID: 1154503988519611759}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &375535708
 GameObject:
   m_ObjectHideFlags: 0
@@ -9228,10 +9223,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2b458301a13c6504b8645deb24dabcc1, type: 2}
-    - target: {fileID: 1154503988484833299, guid: e29e416488fc400468766199fd844d5f, type: 3}
-      propertyPath: CrashAudio
-      value: 
-      objectReference: {fileID: 320286797}
     - target: {fileID: 1154503988484833302, guid: e29e416488fc400468766199fd844d5f, type: 3}
       propertyPath: m_Name
       value: lustre
