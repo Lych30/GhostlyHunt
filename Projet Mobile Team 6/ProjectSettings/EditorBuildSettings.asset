@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SceneLeo.unity
-    guid: 6833c246f0061ee408461db403e2a041
   - enabled: 1
     path: Assets/Darius/MainMenu/MainMenu.unity
     guid: c018791d1e99a624ca95c28bf0288a44
