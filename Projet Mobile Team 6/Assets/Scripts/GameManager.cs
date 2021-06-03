@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public int MaxKey;
     public static int StaticMaxKey;
     public Shader defaultshader;
+    public Sprite GreyTrap;
+    public Sprite GreyManifestation;
+    public Sprite GreyKey;
 
     public Text Key, Obstacles, Manifestation;
 
@@ -48,5 +51,18 @@ public class GameManager : MonoBehaviour
         Key.text = StaticMaxKey.ToString();
         Obstacles.text = StaticMaxTrap.ToString();
         Manifestation.text = StaticMaxManifestation.ToString();
+        if (StaticMaxKey <= 0)
+        {
+            GameObject.Find("KeyIcon").GetComponent<Image>().sprite = GreyKey;
+        }
+        if (StaticMaxManifestation <= 0)
+        {
+            GameObject.Find("ManifIcon").GetComponent<Image>().sprite = GreyManifestation;
+
+        }
+        if (StaticMaxTrap <= 0)
+        {
+            GameObject.Find("ObstaclesIcon").GetComponent<Image>().sprite = GreyTrap;
+        }
     }
 }

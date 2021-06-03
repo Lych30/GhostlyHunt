@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1407274357565400858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1407274357565400868}
+  - component: {fileID: 1407274357565400859}
+  - component: {fileID: 1407274357565400869}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1407274357565400868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407274357565400858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.249743, y: -3.3364801, z: -45.56556}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1407274357565400859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407274357565400858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e4233898ce45d4294e14e47eacde95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxTrap: 1
+  MaxManifestation: 1
+  MaxKey: 1
+  defaultshader: {fileID: 4800000, guid: e260cfa7296ee7642b167f1eb5be5023, type: 3}
+  GreyTrap: {fileID: 21300000, guid: f8d75d698225a46478c54793a022fcb9, type: 3}
+  GreyManifestation: {fileID: 21300000, guid: a67676df780cf244c961d1e4062f66e6, type: 3}
+  GreyKey: {fileID: 21300000, guid: 6bfd073cd7e0b6c41beaff8e9792e988, type: 3}
+  Key: {fileID: 0}
+  Obstacles: {fileID: 0}
+  Manifestation: {fileID: 0}
+--- !u!114 &1407274357565400869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407274357565400858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b87d889e7b26c54ba485e64f74af911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsConnectedToGPS: 0
