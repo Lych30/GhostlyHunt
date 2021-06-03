@@ -2176,6 +2176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: candleOFF (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6229205149028188066, guid: f2a889f6f5a3fec4bbe0470ecf58b8b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6229205149028188067, guid: f2a889f6f5a3fec4bbe0470ecf58b8b9, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -13798,7 +13802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2081969657
 Transform:
   m_ObjectHideFlags: 0
