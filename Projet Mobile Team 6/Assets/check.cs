@@ -9,6 +9,7 @@ using Pathfinding;
         //[SerializeField] GameObject GPS;
         private SpriteRenderer sr;
         private Animator anim;
+        public AudioSource Cry;
         AIPath _ai;
         void Start()
         {
@@ -43,18 +44,15 @@ using Pathfinding;
                     sr.flipX = true;
                 }
             }
-        /*if (_ai.reachedEndOfPath)
-        {
-        if (GPS.GetComponent<GooglePlayGamesManager>().IsConnectedToGPS)
-        {
-            Social.ReportProgress(GPGSIds.achievement_cheers_you_lost, 100.0f, null);
+       
         }
-    }*/
-
+    public void CryPlay()
+    {
+        Cry.Play();
     }
 
 
 
-    }
+   }
 
 

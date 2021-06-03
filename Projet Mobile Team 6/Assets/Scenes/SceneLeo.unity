@@ -9315,6 +9315,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1337095799}
     - target: {fileID: 1407274357565400859, guid: f8357e7d113475946a531b1dd476351a, type: 3}
+      propertyPath: MaxKey
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407274357565400859, guid: f8357e7d113475946a531b1dd476351a, type: 3}
+      propertyPath: MaxTrap
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407274357565400859, guid: f8357e7d113475946a531b1dd476351a, type: 3}
       propertyPath: Obstacles
       value: 
       objectReference: {fileID: 1337095798}
@@ -9322,6 +9330,10 @@ PrefabInstance:
       propertyPath: Manifestation
       value: 
       objectReference: {fileID: 1337095797}
+    - target: {fileID: 1407274357565400859, guid: f8357e7d113475946a531b1dd476351a, type: 3}
+      propertyPath: MaxManifestation
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1407274357565400868, guid: f8357e7d113475946a531b1dd476351a, type: 3}
       propertyPath: m_RootOrder
       value: 0
