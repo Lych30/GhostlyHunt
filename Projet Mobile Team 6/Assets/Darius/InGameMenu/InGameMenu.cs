@@ -20,6 +20,7 @@ public class InGameMenu : MonoBehaviour
         MenuPause.SetActive(false);
         DefaetMenu.SetActive(false);
         VictoryMenu.SetActive(false);
+        Time.timeScale = 1;
     }
 
     private void Update()
