@@ -2405,7 +2405,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -9.527546, y: 0.9788575}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2426,7 +2426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204941623}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.499134, y: 12.562058, z: 0}
+  m_LocalPosition: {x: 6.03, y: 13.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4772,9 +4772,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432318826476294906, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
+      propertyPath: willGrow
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8432318826476294908, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: screenBoundOffset
       value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432318826476294909, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
+      propertyPath: willGrow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432318826476294909, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
+      propertyPath: pooledAmount
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8432318826488836882, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_Pivot.x
@@ -4878,7 +4890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8432318826488836894, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8432318826872045442, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_IsActive
@@ -8072,7 +8084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411060de4483b5e4c9847cd3cbc18554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 1, g: 0.7076588, b: 0, a: 1}
+  targetColor: {r: 1, g: 0.61947197, b: 0, a: 1}
   needBoxIndicator: 1
   needArrowIndicator: 1
   needDistanceText: 0
@@ -8125,7 +8137,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992066534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40, y: 7.5, z: -115.011086}
+  m_LocalPosition: {x: 40, y: 7.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
