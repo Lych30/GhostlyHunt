@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9029562045226713362}
   - component: {fileID: 7866325662607004073}
   - component: {fileID: 3595504566099559781}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: commode_rightP
   m_TagString: Untagged
   m_Icon: {fileID: 0}

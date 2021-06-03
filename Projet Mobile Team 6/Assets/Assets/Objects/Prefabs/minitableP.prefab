@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2800131073026793331}
   - component: {fileID: 6126598621222924374}
   - component: {fileID: 2736696858102075521}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: minitableP
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3139269303802673415}
   - component: {fileID: 7929558649119909925}
   - component: {fileID: 482262464617114872}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: doublebed_frontP
   m_TagString: Untagged
   m_Icon: {fileID: 0}

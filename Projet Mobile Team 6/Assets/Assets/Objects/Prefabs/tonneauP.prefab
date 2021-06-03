@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7585559401107055624}
   - component: {fileID: 7758280221027283083}
   - component: {fileID: 4707122719196028714}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tonneauP
   m_TagString: Untagged
   m_Icon: {fileID: 0}

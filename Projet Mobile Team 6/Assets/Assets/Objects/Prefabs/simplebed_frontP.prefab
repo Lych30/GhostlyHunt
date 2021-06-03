@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2625216922228317252}
   - component: {fileID: 4603962898460366700}
   - component: {fileID: 5788869451601835306}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: simplebed_frontP
   m_TagString: Untagged
   m_Icon: {fileID: 0}

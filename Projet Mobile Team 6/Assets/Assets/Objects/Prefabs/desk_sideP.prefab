@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7768399546501779799}
   - component: {fileID: 4799423606161375002}
   - component: {fileID: 9168407921819999540}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: desk_sideP
   m_TagString: Untagged
   m_Icon: {fileID: 0}

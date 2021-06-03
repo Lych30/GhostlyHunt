@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2520231568588780979}
   - component: {fileID: 7117114144754123427}
   - component: {fileID: 2893070899858550845}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: sbed_sideP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
