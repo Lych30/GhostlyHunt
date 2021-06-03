@@ -103,7 +103,7 @@ MonoBehaviour:
   Destination: {fileID: 328508965752020029, guid: a022ffee35fded149af340b6bee98e08, type: 3}
   TriggerZone: {fileID: 3042286026016035911}
   StatueAudio: {fileID: 616519688680383104}
-  orientation: 2
+  orientation: 3
 --- !u!61 &5890991454505870404
 BoxCollider2D:
   m_ObjectHideFlags: 0
