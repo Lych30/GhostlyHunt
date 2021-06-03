@@ -10,10 +10,15 @@ public class InGameMenu : MonoBehaviour
     public GameObject MenuPause;
     public GameObject DefaetMenu;
     public GameObject VictoryMenu;
+    AudioSource[] list;
 
     public bool loose;
     public bool win;
 
+    private void Awake()
+    {
+        list = FindObjectsOfType<AudioSource>();
+    }
     private void Start()
     {
         UIGame.SetActive(true);
@@ -34,6 +39,10 @@ public class InGameMenu : MonoBehaviour
         UIGame.SetActive(false);
         MenuPause.SetActive(true);
         Time.timeScale = 0;
+        foreach (AudioSource audio in list)
+        {
+            audio.pitch = 0f;
+        }
     }
 
     public void Resume()
@@ -41,6 +50,10 @@ public class InGameMenu : MonoBehaviour
         UIGame.SetActive(true);
         MenuPause.SetActive(false);
         Time.timeScale = 1;
+        foreach (AudioSource audio in list)
+        {
+            audio.pitch = 1f;
+        }
     }
 
     public void Defaet(bool Loose)
