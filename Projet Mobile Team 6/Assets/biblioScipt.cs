@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class biblioScipt : MonoBehaviour
 {
+    [SerializeField]AudioSource BiblioAudio;
     private Shader shaderDefault;
     private void Start()
     {
@@ -13,6 +14,7 @@ public class biblioScipt : MonoBehaviour
     {
         if (GameManager.StaticMaxTrap > 0)
         {
+            BiblioAudio.Play();
             GetComponent<Animator>().SetTrigger("fall");
             GetComponent<BoxCollider2D>().offset = new Vector2(GetComponent<BoxCollider2D>().offset.x, -2.63f);
             GetComponent<SpriteRenderer>().material.shader = shaderDefault;

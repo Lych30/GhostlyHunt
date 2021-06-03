@@ -11,6 +11,7 @@ public class fireplace : MonoBehaviour
     private Collider2D coll2d;
     private Collider2D herocoll2d;
     private const float GRIDSIZE = 3;
+    public AudioSource FlammeAudio;
     private bool used;
     private void Start()
     {
@@ -32,6 +33,7 @@ public class fireplace : MonoBehaviour
     }
     IEnumerator FlammeTrigger()
     {
+        FlammeAudio.Play();
         GetComponent<Animator>().SetTrigger("Trigger");
         used = true;
         rend.material.shader = shaderDefault;

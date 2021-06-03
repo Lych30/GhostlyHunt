@@ -8,6 +8,7 @@ public class candleScript : MonoBehaviour
     BoxCollider2D boxcol;
     private Shader shaderDefault;
     bool isactivated;
+    [SerializeField] AudioSource CandleAudio;
     private void Start()
     {
         shaderDefault = GameObject.Find("GameManager").GetComponent<GameManager>().defaultshader;
@@ -16,6 +17,7 @@ public class candleScript : MonoBehaviour
     {
         if(!isactivated)
         {
+            CandleAudio.Play();
             boxcol = gameObject.AddComponent<BoxCollider2D>() as BoxCollider2D;
             boxcol.size = new Vector3(10, 10, 3);
             AstarPath.active.Scan();

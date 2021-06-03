@@ -16,6 +16,7 @@ public class chandelier : MonoBehaviour
     [SerializeField]private Sprite tombé;
     private GameObject debrisGO;
     private const float GRIDSIZE = 3;
+    public AudioSource CrashAudio;
     private bool used;
 
     private void Start()
@@ -59,7 +60,9 @@ public class chandelier : MonoBehaviour
         debrisGO = Instantiate(Debris, transform.position, new Quaternion());
         debrisGO.GetComponent<SpriteRenderer>().sprite = tombé;
         coll2d.enabled = false;
-        Destroy(gameObject);
+        GetComponent<SpriteRenderer>().enabled = false;
+        CrashAudio.Play();
+        Destroy(gameObject,2);
         //Destroy(GetComponent<Rigidbody2D>());
         AstarPath.active.Scan();
     }

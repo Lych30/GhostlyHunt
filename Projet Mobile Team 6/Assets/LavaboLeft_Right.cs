@@ -12,6 +12,7 @@ public class LavaboLeft_Right : MonoBehaviour
     private const float GRIDSIZE = 3;
     public Animator anim;
     private bool used;
+    public AudioSource LavaboAudio;
 
     private enum Orientation { LEFT,RIGHT }
     [SerializeField] private Orientation orientation;
@@ -40,7 +41,7 @@ public class LavaboLeft_Right : MonoBehaviour
             anim.SetTrigger("Trigger");
             used = true;
             rend.material.shader = shaderDefault;
-
+            LavaboAudio.Play();
             switch (orientation)
             {
                 case Orientation.LEFT:

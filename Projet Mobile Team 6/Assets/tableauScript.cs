@@ -15,6 +15,7 @@ public class tableauScript : MonoBehaviour
     private SpriteRenderer rend;
     private Shader shaderDefault;
     private const float GRIDSIZE = 3;
+    public AudioSource TableauAudio;
     private bool used;
 
     //Orientation
@@ -24,7 +25,8 @@ public class tableauScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        used = false;
+        
+           used = false;
         shaderDefault = GameObject.Find("GameManager").GetComponent<GameManager>().defaultshader;
         rend = GetComponent<SpriteRenderer>();
         coll2d = TriggerZone.GetComponent<Collider2D>();
@@ -41,7 +43,7 @@ public class tableauScript : MonoBehaviour
         {
             if (Ai != null && !used && GameObject.Find("PriorityDestination(Clone)") == null && Physics2D.Distance(coll2d, herocoll2d.GetComponent<Collider2D>()).isOverlapped && GameManager.StaticMaxManifestation > 0)
             {
-
+                TableauAudio.Play();
                 AiPath.maxSpeed = 6;
                 rend.material.shader = shaderDefault;
                 used = true;

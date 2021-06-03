@@ -12,6 +12,7 @@ public class BaignoireScript : MonoBehaviour
     private const float GRIDSIZE = 3;
     public Animator anim;
     private bool used;
+    public AudioSource BaignoireAudio;
     private void Start()
     {
         used = false;
@@ -24,6 +25,7 @@ public class BaignoireScript : MonoBehaviour
     {
         if (!used && GameManager.StaticMaxManifestation > 0)
         {
+            BaignoireAudio.Play();
             anim.SetTrigger("Trigger");
             used = true;
             rend.material.shader = shaderDefault;

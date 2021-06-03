@@ -11,6 +11,7 @@ public class clockScript : MonoBehaviour
     private AIDestinationSetter Ai;
     private const float GRIDSIZE = 3;
     public Animator anim;
+    public AudioSource ClockAudio;
     private bool used;
     private void Start()
     {
@@ -24,6 +25,7 @@ public class clockScript : MonoBehaviour
     {
         if (!used && GameManager.StaticMaxManifestation > 0)
         {
+            ClockAudio.Play();
             anim.SetTrigger("Trigger");
             used = true;
             rend.material.shader = shaderDefault;
