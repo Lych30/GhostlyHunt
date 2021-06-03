@@ -1097,6 +1097,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1156787954472870303, guid: 76f2c3f40470cc046b414e70fae9b374, type: 3}
+      propertyPath: targetColor.b
+      value: 0.6785771
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156787954472870303, guid: 76f2c3f40470cc046b414e70fae9b374, type: 3}
+      propertyPath: targetColor.g
+      value: 0.26125845
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156787954472870303, guid: 76f2c3f40470cc046b414e70fae9b374, type: 3}
+      propertyPath: targetColor.r
+      value: 0.9716981
+      objectReference: {fileID: 0}
     - target: {fileID: 1156787955799194717, guid: 76f2c3f40470cc046b414e70fae9b374, type: 3}
       propertyPath: m_Intensity
       value: 0.3
@@ -1473,7 +1485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757541, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.430165
+      value: 6.45
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757541, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1533,15 +1545,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Surprise omg
+      value: Who is this ? An intruder ? She must have been the one waking me up...
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: 'BUT DU JEU : EXPLICATIONS'
+      value: I'm feeling bored, let's see if I can bring her in the small bedroom
+        over there and talk to her.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: 'Follow the blue cursor to see where it is : I''m only capable of appearing
+        there.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: 'She''s probably going to the red door to reach the next part of the
+        manor. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: You can follow the red cursor to see where she's going.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
@@ -1937,7 +1964,7 @@ MonoBehaviour:
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
     cacheStartup: 0
-  showNavGraphs: 0
+  showNavGraphs: 1
   showUnwalkableNodes: 1
   debugMode: 0
   debugFloor: 0
@@ -2293,6 +2320,10 @@ PrefabInstance:
     - target: {fileID: 2935675031328287674, guid: c17b059fb012618448ddbfcd32b5e3a1, type: 3}
       propertyPath: m_Name
       value: couch_leftP
+      objectReference: {fileID: 0}
+    - target: {fileID: 2935675031328287674, guid: c17b059fb012618448ddbfcd32b5e3a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5407721769752208381, guid: c17b059fb012618448ddbfcd32b5e3a1, type: 3}
       propertyPath: m_RootOrder
@@ -2656,11 +2687,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757541, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.8798347
+      value: -5.05
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757541, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -22.291386
+      value: -22.86
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757541, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2720,7 +2751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: PIANO
+      value: Let's see if I can distract her by bringing here to the piano.
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
@@ -3720,11 +3751,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: 'Hmm... Who''s waking me ? '
+      value: Hmm... Oh hello !
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: It's been a long time since I fell asleep !
+      value: It's been such a long time since I fell asleep in this place...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
@@ -3813,7 +3844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411060de4483b5e4c9847cd3cbc18554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0, g: 0.6075771, b: 1, a: 1}
+  targetColor: {r: 1, g: 0.079807915, b: 0, a: 1}
   needBoxIndicator: 1
   needArrowIndicator: 1
   needDistanceText: 0
@@ -3935,7 +3966,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317341652}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.82, y: 0.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 126418565}
@@ -7182,11 +7213,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1948190856499076925, guid: f591af0dd2fe06d42854aac851956200, type: 3}
       propertyPath: m_Size.y
-      value: 7.038414
+      value: 5.5712814
       objectReference: {fileID: 0}
     - target: {fileID: 1948190856499076925, guid: f591af0dd2fe06d42854aac851956200, type: 3}
       propertyPath: m_Offset.y
-      value: 0.519207
+      value: -0.21435928
       objectReference: {fileID: 0}
     - target: {fileID: 3017068770081639682, guid: f591af0dd2fe06d42854aac851956200, type: 3}
       propertyPath: m_RootOrder
@@ -7235,6 +7266,10 @@ PrefabInstance:
     - target: {fileID: 8311409622089230433, guid: f591af0dd2fe06d42854aac851956200, type: 3}
       propertyPath: m_Name
       value: couch_rightP
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311409622089230433, guid: f591af0dd2fe06d42854aac851956200, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f591af0dd2fe06d42854aac851956200, type: 3}
@@ -7406,7 +7441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411060de4483b5e4c9847cd3cbc18554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 1, g: 0.7076588, b: 0, a: 1}
+  targetColor: {r: 0, g: 0.20354223, b: 1, a: 1}
   needBoxIndicator: 1
   needArrowIndicator: 1
   needDistanceText: 0
@@ -14029,7 +14064,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2081969657
 Transform:
   m_ObjectHideFlags: 0
