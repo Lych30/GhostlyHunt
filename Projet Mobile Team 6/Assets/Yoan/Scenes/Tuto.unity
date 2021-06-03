@@ -1062,15 +1062,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: "PORTE\t"
+      value: 'Now we can use our last trick : click on the door above her and I will
+        close it !'
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: EXPLICATIONS PORTES
+      value: 'This is the last type of traps I can pull : it''s the key icon on the
+        left.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Now she has no choice but to come my way !
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
@@ -2247,7 +2253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757541, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.961385
+      value: -11.9
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757541, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2303,15 +2309,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: LUSTRE
+      value: We'll need to bring her to the right, let's click on this chandelier
+        to block the way !
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: EXPLICATIONS OBSTACLES
+      value: This is an "obstacle" type of tricks, it's represented by the red icon.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: 'We have no obstacles left : I''m limited in my capacity to interact
+        with the manor.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
@@ -2813,11 +2825,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Let's see if I can distract her by bringing here to the piano.
+      value: We'll distract her by bringing her to the piano. Let's play some music...
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: EXPLICATIONS MANIFESTATIONS
+      value: See this purple icon on the left ? This is a type of tricks I can pull,
+        a type of manifestation.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
@@ -6845,7 +6862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7677890544139526607, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -12.0000305
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 8432318826339458487, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_IsActive
@@ -13775,15 +13792,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: STATUE
+      value: Quick, activate this statue and I will use it to scare her away !
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: EXPLICATIONS MANIFESTATIONS QUI REPOUSSENT
+      value: This is a manifestation like the piano, but in a repulsive way.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: It will push her away rather than making her come here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: It will push her away rather than making her come here.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
