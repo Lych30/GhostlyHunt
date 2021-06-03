@@ -15,6 +15,7 @@ public class Statue : MonoBehaviour
     private SpriteRenderer rend;
     private Shader shaderDefault;
     private const float GRIDSIZE = 3;
+    public AudioSource StatueAudio;
     private bool used;
 
     //Orientation
@@ -41,7 +42,7 @@ public class Statue : MonoBehaviour
         {
             if (Ai != null && !used && GameObject.Find("PriorityDestination(Clone)") == null && Physics2D.Distance(coll2d, herocoll2d.GetComponent<Collider2D>()).isOverlapped && GameManager.StaticMaxManifestation>0)
             {
-
+                StatueAudio.Play();
                 AiPath.maxSpeed = 6;
                 rend.material.shader = shaderDefault;
                 used = true;

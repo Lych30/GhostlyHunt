@@ -9,6 +9,7 @@ public class TrapPlacement : MonoBehaviour
     {
         GraphNode node = AstarPath.active.GetNearest(transform.position, NNConstraint.None).node;
         transform.position = (Vector3)node.position;
+        transform.position = new Vector3(transform.position.x,transform.position.y,0);
         AstarPath.active.Scan();
     }
     /*private void OnMouseDrag()

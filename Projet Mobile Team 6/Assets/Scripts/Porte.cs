@@ -15,7 +15,7 @@ public class Porte : MonoBehaviour
         rend = GetComponent<SpriteRenderer>();
 
     }
-    private void OnMouseDown()
+    private void OnMouseUpAsButton()
     {
         if (GameManager.StaticMaxKey > 0 && !isUsed)
         {
@@ -27,6 +27,7 @@ public class Porte : MonoBehaviour
             gameObject.layer = 3;
             AstarPath.active.Scan();
             isUsed = true;
+            transform.position += new Vector3(-1.5f, 1,0);
         }
         
     }
