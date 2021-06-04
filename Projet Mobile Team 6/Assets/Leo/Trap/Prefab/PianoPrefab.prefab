@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rick: {fileID: 3833342470091498101}
   Destination: {fileID: 328508965752020029, guid: ae104ac2c6eb04f49a5b617130c626f3, type: 3}
+  shaderDefault: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &7526931723817038464
 BoxCollider2D:
