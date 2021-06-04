@@ -40,6 +40,7 @@ public class fireplace : MonoBehaviour
         Instantiate(Flamme, new Vector3(transform.position.x, transform.position.y - GRIDSIZE), new Quaternion());
         Instantiate(Flamme, new Vector3(transform.position.x, transform.position.y - 2 * GRIDSIZE), new Quaternion());
         GameManager.StaticMaxTrap--;
+        GameObject.Find("GameManager").GetComponent<GameManager>().UpdateUiText();
         AstarPath.active.Scan();
         yield return new WaitForSeconds(1);
         GetComponent<Animator>().SetTrigger("End");

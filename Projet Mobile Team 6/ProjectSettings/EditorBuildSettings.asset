@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Yoan/Scenes/Tuto.unity
     guid: 5fb43e829dddc4b4992d2ce0eb7005a7
+  - enabled: 1
+    path: Assets/Yoan/Scenes/Level1.unity
+    guid: ba7be56fc5a44df4c9633d9cd7ec3b0e
   m_configObjects: {}
