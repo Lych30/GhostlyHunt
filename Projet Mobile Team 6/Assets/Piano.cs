@@ -26,6 +26,7 @@ public class Piano : MonoBehaviour
         if (!used && GameManager.StaticMaxManifestation>0)
         {
             Rick.Play();
+            GameObject.Find("GameManager").GetComponent<AudioSource>().pitch = 0;
             anim.SetTrigger("Trigger");
             used = true;
             rend.material.shader = shaderDefault;
