@@ -1151,19 +1151,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1156787954472870303, guid: 76f2c3f40470cc046b414e70fae9b374, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1156787954472870303, guid: 76f2c3f40470cc046b414e70fae9b374, type: 3}
       propertyPath: targetColor.b
-      value: 0.6785771
+      value: 0.3160377
       objectReference: {fileID: 0}
     - target: {fileID: 1156787954472870303, guid: 76f2c3f40470cc046b414e70fae9b374, type: 3}
       propertyPath: targetColor.g
-      value: 0.26125845
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1156787954472870303, guid: 76f2c3f40470cc046b414e70fae9b374, type: 3}
       propertyPath: targetColor.r
-      value: 0.9716981
+      value: 0.987762
       objectReference: {fileID: 0}
     - target: {fileID: 1156787955799194717, guid: 76f2c3f40470cc046b414e70fae9b374, type: 3}
       propertyPath: m_Intensity
@@ -4103,12 +4103,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266519876}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 411060de4483b5e4c9847cd3cbc18554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 1, g: 0.079807915, b: 0, a: 1}
+  targetColor: {r: 1, g: 0.2907343, b: 0.23113209, a: 1}
   needBoxIndicator: 1
   needArrowIndicator: 1
   needDistanceText: 0
@@ -7304,6 +7304,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b6992253327f924fbf350f0a380108c, type: 3}
+--- !u!1 &1505412650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7140106492335096799, guid: 527973a5c7eb2344d8d6d3c25b6358e7, type: 3}
+  m_PrefabInstance: {fileID: 1073924534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1505412651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505412650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411060de4483b5e4c9847cd3cbc18554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetColor: {r: 0.20392157, g: 0.3647059, b: 1, a: 1}
+  needBoxIndicator: 1
+  needArrowIndicator: 1
+  needDistanceText: 0
+  indicator: {fileID: 0}
 --- !u!1001 &1523327843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7433,7 +7455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8432318826488836894, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
@@ -7816,7 +7838,6 @@ GameObject:
   - component: {fileID: 1699099703}
   - component: {fileID: 1699099702}
   - component: {fileID: 1699099701}
-  - component: {fileID: 1699099704}
   m_Layer: 0
   m_Name: Zone Fin
   m_TagString: Untagged
@@ -7878,23 +7899,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1699099704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1699099700}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 411060de4483b5e4c9847cd3cbc18554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetColor: {r: 0, g: 0.20354223, b: 1, a: 1}
-  needBoxIndicator: 1
-  needArrowIndicator: 1
-  needDistanceText: 0
-  indicator: {fileID: 0}
 --- !u!1 &1732908544
 GameObject:
   m_ObjectHideFlags: 0
