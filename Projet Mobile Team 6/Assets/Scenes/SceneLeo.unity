@@ -7469,7 +7469,7 @@ MonoBehaviour:
   isGlobal: 1
   priority: 136.66
   blendDistance: 0
-  weight: 0.632
+  weight: 0.322
   sharedProfile: {fileID: 11400000, guid: ee10bb18837b6ba438fd69de5a6b172b, type: 2}
 --- !u!1 &1453616360
 GameObject:
@@ -9217,7 +9217,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 0.9935635, b: 0.8820755, a: 1}
-  m_Intensity: 0.3
+  m_Intensity: 0.5
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
@@ -9868,7 +9868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7140106492336641542, guid: 527973a5c7eb2344d8d6d3c25b6358e7, type: 3}
       propertyPath: NoiseModule.strength.scalar
-      value: 20
+      value: 3.69
       objectReference: {fileID: 0}
     - target: {fileID: 7140106492336641542, guid: 527973a5c7eb2344d8d6d3c25b6358e7, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -9883,8 +9883,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7140106492336641542, guid: 527973a5c7eb2344d8d6d3c25b6358e7, type: 3}
+      propertyPath: ShapeModule.randomPositionAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140106492336641542, guid: 527973a5c7eb2344d8d6d3c25b6358e7, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 50
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 7140106492336641542, guid: 527973a5c7eb2344d8d6d3c25b6358e7, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.size
@@ -9933,7 +9937,11 @@ PrefabInstance:
     - target: {fileID: 7140106492336641543, guid: 527973a5c7eb2344d8d6d3c25b6358e7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e961ac05a9829c1448c4fd14fa25564b, type: 2}
+      objectReference: {fileID: 2100000, guid: 87dee5d03323e4003a9785eface0284a, type: 2}
+    - target: {fileID: 7140106492336641543, guid: 527973a5c7eb2344d8d6d3c25b6358e7, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2f79cb06881d30341b6052d390489b5a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 527973a5c7eb2344d8d6d3c25b6358e7, type: 3}
 --- !u!1001 &3766702623288596180

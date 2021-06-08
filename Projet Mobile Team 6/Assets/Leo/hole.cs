@@ -11,6 +11,7 @@ public class hole : MonoBehaviour
         {
             gameObject.layer = 3;
             GameManager.StaticMaxTrap--;
+            GameObject.Find("GameManager").GetComponent<GameManager>().UpdateUiText();
         }
 
     }
