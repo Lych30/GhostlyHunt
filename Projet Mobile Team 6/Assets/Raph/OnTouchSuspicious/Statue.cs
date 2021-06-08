@@ -18,6 +18,9 @@ public class Statue : MonoBehaviour
     public AudioSource StatueAudio;
     private bool used;
 
+    private int touchCount;
+    private float TimeTuch = 1f;
+
     //Orientation
     private enum Orientation { UP, LEFT, DOWN, RIGHT }
     [SerializeField] private Orientation orientation;
@@ -34,13 +37,25 @@ public class Statue : MonoBehaviour
         Ai = hero.GetComponent<AIDestinationSetter>();
         AiPath = hero.GetComponent<AIPath>();
     }
+    private void Update()
+    {
+        if (touchCount == 1)
+        {
+            TimeTuch -= Time.deltaTime;
+        }
 
+        if (TimeTuch <= 0)
+        {
+            touchCount = 0;
+            TimeTuch = 1f;
+        }
+    }
 
     private void OnMouseUpAsButton()
     {
         if (coll2d != null && herocoll2d != null)
         {
-            if (Ai != null && !used && GameObject.Find("PriorityDestination(Clone)") == null && Physics2D.Distance(coll2d, herocoll2d.GetComponent<Collider2D>()).isOverlapped && GameManager.StaticMaxManifestation>0)
+            if (Ai != null && !used && GameObject.Find("PriorityDestination(Clone)") == null && Physics2D.Distance(coll2d, herocoll2d.GetComponent<Collider2D>()).isOverlapped && GameManager.StaticMaxManifestation>0 && touchCount == 2)
             {
                 StatueAudio.Play();
                 AiPath.maxSpeed = 6;

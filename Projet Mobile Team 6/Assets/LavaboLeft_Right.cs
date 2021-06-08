@@ -14,6 +14,8 @@ public class LavaboLeft_Right : MonoBehaviour
     private bool used;
     public AudioSource LavaboAudio;
 
+    private int touchCount;
+    private float TimeTuch = 1f;
     private enum Orientation { LEFT,RIGHT }
     [SerializeField] private Orientation orientation;
 
@@ -34,9 +36,22 @@ public class LavaboLeft_Right : MonoBehaviour
                 break;
         }
     }
+    private void Update()
+    {
+        if (touchCount == 1)
+        {
+            TimeTuch -= Time.deltaTime;
+        }
+
+        if (TimeTuch <= 0)
+        {
+            touchCount = 0;
+            TimeTuch = 1f;
+        }
+    }
     private void OnMouseUpAsButton()
     {
-        if (!used && GameManager.StaticMaxManifestation > 0)
+        if (!used && GameManager.StaticMaxManifestation > 0 && touchCount == 2)
         {
             anim.SetTrigger("Trigger");
             used = true;

@@ -13,6 +13,9 @@ public class BaignoireScript : MonoBehaviour
     public Animator anim;
     private bool used;
     public AudioSource BaignoireAudio;
+
+    private int touchCount;
+    private float TimeTuch = 1f;
     private void Start()
     {
         used = false;
@@ -21,9 +24,23 @@ public class BaignoireScript : MonoBehaviour
         Ai = GameObject.Find("Hero").GetComponent<AIDestinationSetter>();
         anim = GetComponent<Animator>();
     }
+    private void Update()
+    {
+        if (touchCount == 1)
+        {
+            TimeTuch -= Time.deltaTime;
+        }
+
+        if (TimeTuch <= 0)
+        {
+            touchCount = 0;
+            TimeTuch = 1f;
+        }
+    }
     private void OnMouseUpAsButton()
     {
-        if (!used && GameManager.StaticMaxManifestation > 0)
+        touchCount++;
+        if (!used && GameManager.StaticMaxManifestation > 0 && touchCount == 2)
         {
             BaignoireAudio.Play();
             anim.SetTrigger("Trigger");

@@ -13,6 +13,10 @@ public class fireplace : MonoBehaviour
     private const float GRIDSIZE = 3;
     public AudioSource FlammeAudio;
     private bool used;
+
+    private int touchCount;
+    private float TimeTuch=1f;
+
     private void Start()
     {
         used = false;
@@ -22,15 +26,32 @@ public class fireplace : MonoBehaviour
         rend = GetComponent<SpriteRenderer>();
     }
 
-
-    private void OnMouseDown()
+    private void Update()
     {
-        if (!used && GameManager.StaticMaxTrap > 0)
+        if (touchCount == 1)
         {
-            StartCoroutine("FlammeTrigger");
+            TimeTuch -= Time.deltaTime;
+        }
 
+        if(TimeTuch <= 0)
+        {
+            touchCount = 0;
+            TimeTuch = 1f;
         }
     }
+
+
+
+    private void OnMouseUpAsButton()
+    {
+            touchCount++;
+            if (!used && GameManager.StaticMaxTrap > 0 && touchCount == 2)
+            {
+                StartCoroutine("FlammeTrigger");
+            }
+
+    }
+    
     IEnumerator FlammeTrigger()
     {
         FlammeAudio.Play();

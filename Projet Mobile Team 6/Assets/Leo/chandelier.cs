@@ -19,6 +19,9 @@ public class chandelier : MonoBehaviour
     public AudioSource CrashAudio;
     private bool used;
 
+    private int touchCount;
+    private float TimeTuch = 1f;
+
     private void Start()
     {
         used = false;
@@ -29,12 +32,24 @@ public class chandelier : MonoBehaviour
         rend = GetComponent<SpriteRenderer>();
     }
 
+    private void Update()
+    {
+        if (touchCount == 1)
+        {
+            TimeTuch -= Time.deltaTime;
+        }
 
+        if (TimeTuch <= 0)
+        {
+            touchCount = 0;
+            TimeTuch = 1f;
+        }
+    }
     private void OnMouseUpAsButton()
     {
         if (coll2d != null && herocoll2d != null)
         {
-            if (!used && !Physics2D.Distance(coll2d, herocoll2d.GetComponent<Collider2D>()).isOverlapped && GameManager.StaticMaxTrap > 0)
+            if (!used && !Physics2D.Distance(coll2d, herocoll2d.GetComponent<Collider2D>()).isOverlapped && GameManager.StaticMaxTrap > 0 && touchCount == 2)
             {
                 StartCoroutine("tombe");
                 GameManager.StaticMaxTrap--;

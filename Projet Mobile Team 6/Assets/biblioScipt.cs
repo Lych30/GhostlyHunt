@@ -6,13 +6,29 @@ public class biblioScipt : MonoBehaviour
 {
     [SerializeField]AudioSource BiblioAudio;
     private Shader shaderDefault;
+
+    private int touchCount;
+    private float TimeTuch = 1f;
     private void Start()
     {
         shaderDefault = GameObject.Find("GameManager").GetComponent<GameManager>().defaultshader;
     }
+    private void Update()
+    {
+        if (touchCount == 1)
+        {
+            TimeTuch -= Time.deltaTime;
+        }
+
+        if (TimeTuch <= 0)
+        {
+            touchCount = 0;
+            TimeTuch = 1f;
+        }
+    }
     private void OnMouseUpAsButton()
     {
-        if (GameManager.StaticMaxTrap > 0)
+        if (GameManager.StaticMaxTrap > 0 && touchCount == 2)
         {
             BiblioAudio.Play();
             GetComponent<Animator>().SetTrigger("fall");

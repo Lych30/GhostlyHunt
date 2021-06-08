@@ -13,6 +13,10 @@ public class Piano : MonoBehaviour
     private const float GRIDSIZE = 3;
     public Animator anim;
     private bool used;
+
+    private int touchCount;
+    private float TimeTuch = 1f;
+
     private void Start()
     {
         used = false;
@@ -21,9 +25,22 @@ public class Piano : MonoBehaviour
         Ai = GameObject.Find("Hero").GetComponent<AIDestinationSetter>();
         anim = GetComponent<Animator>();
     }
+    private void Update()
+    {
+        if (touchCount == 1)
+        {
+            TimeTuch -= Time.deltaTime;
+        }
+
+        if (TimeTuch <= 0)
+        {
+            touchCount = 0;
+            TimeTuch = 1f;
+        }
+    }
     private void OnMouseUpAsButton()
     {
-        if (!used && GameManager.StaticMaxManifestation>0)
+        if (!used && GameManager.StaticMaxManifestation > 0 && touchCount == 2) 
         {
             Rick.Play();
             GameObject.Find("GameManager").GetComponent<AudioSource>().pitch = 0;
