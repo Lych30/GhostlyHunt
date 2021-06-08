@@ -8,10 +8,10 @@ public class Piano : MonoBehaviour
     public AudioSource Rick;
     public Transform Destination;
     private SpriteRenderer rend;
-    public Shader shaderDefault;
+    private Shader shaderDefault;
     private AIDestinationSetter Ai;
     private const float GRIDSIZE = 3;
-    public Animator anim;
+    private Animator anim;
     private bool used;
 
     private int touchCount;

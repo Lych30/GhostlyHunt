@@ -55,6 +55,7 @@ public class Statue : MonoBehaviour
     {
         if (coll2d != null && herocoll2d != null)
         {
+            touchCount++;
             if (Ai != null && !used && GameObject.Find("PriorityDestination(Clone)") == null && Physics2D.Distance(coll2d, herocoll2d.GetComponent<Collider2D>()).isOverlapped && GameManager.StaticMaxManifestation>0 && touchCount == 2)
             {
                 StatueAudio.Play();
