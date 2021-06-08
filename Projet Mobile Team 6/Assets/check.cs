@@ -50,9 +50,17 @@ using Pathfinding;
     {
         Cry.Play();
     }
+    public void DebutFear()
+    {
+        anim.SetBool("IsFeared", true);
+    }
+    public void EndFear()
+    {
+        anim.SetBool("IsFeared", false);
+    }
 
 
 
-   }
+}
 
 
