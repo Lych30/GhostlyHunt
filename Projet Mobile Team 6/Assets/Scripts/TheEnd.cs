@@ -16,6 +16,7 @@ public class TheEnd : MonoBehaviour
             collision.GetComponent<AIPath>().canMove = false;
             collision.GetComponent<Animator>().SetTrigger("Crying");
             collision.GetComponent<Animator>().SetBool("IsCrying",true);
+            collision.GetComponent<check>().End.Play();
             StartCoroutine(Fin());
         }
     }

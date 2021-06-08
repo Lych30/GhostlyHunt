@@ -10,6 +10,7 @@ using Pathfinding;
         private SpriteRenderer sr;
         private Animator anim;
         public AudioSource Cry;
+        public AudioSource End;
         AIPath _ai;
         void Start()
         {
