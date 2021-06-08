@@ -51,6 +51,7 @@ public class LavaboLeft_Right : MonoBehaviour
     }
     private void OnMouseUpAsButton()
     {
+        touchCount++;
         if (!used && GameManager.StaticMaxManifestation > 0 && touchCount == 2)
         {
             anim.SetTrigger("Trigger");

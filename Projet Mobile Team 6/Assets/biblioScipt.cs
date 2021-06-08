@@ -28,6 +28,7 @@ public class biblioScipt : MonoBehaviour
     }
     private void OnMouseUpAsButton()
     {
+        touchCount++;
         if (GameManager.StaticMaxTrap > 0 && touchCount == 2)
         {
             BiblioAudio.Play();

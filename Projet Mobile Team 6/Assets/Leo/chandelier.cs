@@ -49,6 +49,7 @@ public class chandelier : MonoBehaviour
     {
         if (coll2d != null && herocoll2d != null)
         {
+            touchCount++;
             if (!used && !Physics2D.Distance(coll2d, herocoll2d.GetComponent<Collider2D>()).isOverlapped && GameManager.StaticMaxTrap > 0 && touchCount == 2)
             {
                 StartCoroutine("tombe");
