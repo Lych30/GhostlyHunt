@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class InGameMenu : MonoBehaviour
@@ -10,6 +11,10 @@ public class InGameMenu : MonoBehaviour
     public GameObject MenuPause;
     public GameObject DefaetMenu;
     public GameObject VictoryMenu;
+
+    [Header("Loading Scene")]
+    public GameObject LoadinScreen;
+    public Slider LoadingProgress;
     AudioSource[] list;
 
     public bool loose;
@@ -85,17 +90,53 @@ public class InGameMenu : MonoBehaviour
     {
         Debug.Log("Next");
         Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+
+        //OLD
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+
+        //NEW
+        StartCoroutine(Loading(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        //OLD
+        //SceneManager.LoadScene("MainMenu");
+
+        //NEW
+        StartCoroutine(Loading("MainMenu"));
     }
 
     public void QuitGame()
     {
         Application.Quit();
     }
-    
+
+
+    //LOADING SCENES
+    IEnumerator Loading(string name)
+    {
+        LoadinScreen.SetActive(true);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(name);
+        
+        while (!operation .isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / .9f);
+            LoadingProgress.value = progress;
+            yield return null;
+        }
+    }
+    IEnumerator Loading(int index)
+    {
+        LoadinScreen.SetActive(true);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(index);
+
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / .9f);
+            LoadingProgress.value = progress;
+            yield return null;
+        }
+    }
+
 }

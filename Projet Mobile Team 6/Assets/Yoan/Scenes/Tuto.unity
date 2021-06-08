@@ -7311,6 +7311,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 894261340642352441, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 894261340642352441, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4666582611885633016, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -7318,6 +7326,10 @@ PrefabInstance:
     - target: {fileID: 7677890544139526607, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824202688424488095, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8432318826339458487, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_IsActive
@@ -19267,7 +19279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2081969657
 Transform:
   m_ObjectHideFlags: 0
