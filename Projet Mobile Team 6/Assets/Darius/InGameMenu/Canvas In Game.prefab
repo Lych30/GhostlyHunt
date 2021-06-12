@@ -3401,7 +3401,7 @@ MonoBehaviour:
   dialogueText_Charlotte: {fileID: 2986693175449771431}
   Gdialogue_Fantome: {fileID: 1720905110644637239}
   Gdialogue_Charlotte: {fileID: 3688689248096387231}
-  "temp_\xE9criture": 0.03
+  "temp_\xE9criture": 0.02
 --- !u!114 &6110454052167745580
 MonoBehaviour:
   m_ObjectHideFlags: 0
