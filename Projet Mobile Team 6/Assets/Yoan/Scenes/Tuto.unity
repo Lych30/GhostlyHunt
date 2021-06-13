@@ -1237,15 +1237,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1156787954472870303, guid: 76f2c3f40470cc046b414e70fae9b374, type: 3}
       propertyPath: targetColor.b
-      value: 0.40792987
+      value: 0.17709008
       objectReference: {fileID: 0}
     - target: {fileID: 1156787954472870303, guid: 76f2c3f40470cc046b414e70fae9b374, type: 3}
       propertyPath: targetColor.g
-      value: 0.9504425
+      value: 0.009478444
       objectReference: {fileID: 0}
     - target: {fileID: 1156787954472870303, guid: 76f2c3f40470cc046b414e70fae9b374, type: 3}
       propertyPath: targetColor.r
-      value: 0.9716981
+      value: 0.6698113
       objectReference: {fileID: 0}
     - target: {fileID: 1156787955799194717, guid: 76f2c3f40470cc046b414e70fae9b374, type: 3}
       propertyPath: m_Intensity
@@ -4436,7 +4436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411060de4483b5e4c9847cd3cbc18554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 0.990566, g: 0.19714946, b: 0.1728818, a: 1}
+  targetColor: {r: 0.8679245, g: 0.027847845, b: 0, a: 1}
   needBoxIndicator: 1
   needArrowIndicator: 1
   needDistanceText: 0
@@ -7649,7 +7649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411060de4483b5e4c9847cd3cbc18554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetColor: {r: 1, g: 1, b: 1, a: 1}
+  targetColor: {r: 0.006407972, g: 0.12155345, b: 0.1509434, a: 1}
   needBoxIndicator: 1
   needArrowIndicator: 1
   needDistanceText: 0
@@ -7675,7 +7675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7677890544139526607, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -12.0000305
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 7824202688424488095, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_IsActive
