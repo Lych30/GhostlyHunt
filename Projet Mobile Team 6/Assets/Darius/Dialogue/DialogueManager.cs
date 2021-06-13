@@ -12,6 +12,8 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject Gdialogue_Fantome;
     public GameObject Gdialogue_Charlotte;
+    public GameObject Next;
+    public GameObject End;
 
     private Queue<string> sentences;
 
@@ -23,6 +25,8 @@ public class DialogueManager : MonoBehaviour
 
         Gdialogue_Fantome.SetActive(false);
         Gdialogue_Charlotte.SetActive(false);
+        Next.SetActive(false);
+        End.SetActive(false);
     }
 
     public void StartDialogue(Dialogue dialogue, bool dialogue_Charlotte, bool dialogue_Fantome)
@@ -38,6 +42,8 @@ public class DialogueManager : MonoBehaviour
             Gdialogue_Fantome.SetActive(true);
         }
 
+
+
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
@@ -45,12 +51,34 @@ public class DialogueManager : MonoBehaviour
             sentences.Enqueue(sentence);
         }
 
+        if (sentences.Count > 1)
+        {
+            Next.SetActive(true);
+            End.SetActive(false);
+        }
+        if (sentences.Count == 1)
+        {
+            End.SetActive(true);
+            Next.SetActive(false);
+        }
         DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
     {
-        if(sentences.Count == 0)
+        if (sentences.Count > 1)
+        {
+            Debug.Log("test");
+            Next.SetActive(true);
+            End.SetActive(false);
+        }
+        if (sentences.Count == 1)
+        {
+            End.SetActive(true);
+            Next.SetActive(false);
+        }
+
+        if (sentences.Count == 0)
         {
             EndDialogue();
             return;
@@ -88,5 +116,9 @@ public class DialogueManager : MonoBehaviour
 
         Gdialogue_Fantome.SetActive(false);
         Gdialogue_Charlotte.SetActive(false);
+        Next.SetActive(false);
+        End.SetActive(false);
     }
+
+
 }
