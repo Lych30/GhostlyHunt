@@ -18182,7 +18182,7 @@ MonoBehaviour:
   isGlobal: 1
   priority: 136.66
   blendDistance: 0
-  weight: 0.322
+  weight: 0.5
   sharedProfile: {fileID: 11400000, guid: ee10bb18837b6ba438fd69de5a6b172b, type: 2}
 --- !u!1 &1839131153
 GameObject:
