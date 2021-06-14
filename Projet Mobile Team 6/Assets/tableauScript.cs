@@ -59,6 +59,7 @@ public class tableauScript : MonoBehaviour
             if (Ai != null && !used && GameObject.Find("PriorityDestination(Clone)") == null && Physics2D.Distance(coll2d, herocoll2d.GetComponent<Collider2D>()).isOverlapped && GameManager.StaticMaxManifestation > 0 && touchCount == 2)
             {
                 TableauAudio.Play();
+                Handheld.Vibrate();
                 AiPath.maxSpeed = 6;
                 rend.material.shader = shaderDefault;
                 used = true;
