@@ -3181,6 +3181,14 @@ PrefabInstance:
       value: 0.2539457
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
+      propertyPath: focus
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
+      propertyPath: FocusGameobject
+      value: 
+      objectReference: {fileID: 1622041878}
+    - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue_Charlotte
       value: 0
       objectReference: {fileID: 0}
@@ -7669,13 +7677,33 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1720905110644637239, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720905110644637239, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2022792930337056259, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4666582611885633016, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695716975161270883, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7677890544139526607, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745133866848607979, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7824202688424488095, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_IsActive
@@ -7915,6 +7943,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5773695f45823b141a075363f36250c9, type: 3}
+--- !u!1 &1622041878 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7526931723817038470, guid: 5184c885ef260a14da63ce00e99909c3, type: 3}
+  m_PrefabInstance: {fileID: 591928272}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1643059280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19611,7 +19644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2081969657
 Transform:
   m_ObjectHideFlags: 0
