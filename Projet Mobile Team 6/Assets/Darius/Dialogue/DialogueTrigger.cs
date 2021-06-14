@@ -9,7 +9,6 @@ public class DialogueTrigger : MonoBehaviour
     public bool dialogue_Charlotte;
     public bool dialogue_Fantome;
 
-    public bool focus;
     private bool Triggerfocus;
     private Vector3 refvel;
     public GameObject FocusGameobject;
@@ -18,8 +17,14 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (Triggerfocus)
         {
-            Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, FocusGameobject.transform.position, ref refvel, 3, 3);
+            Camera.main.GetComponent<zoomPinch>().enabled = false;
+            Camera.main.transform.position = Vector3.SmoothDamp(Camera.main.transform.position, FocusGameobject.transform.position, ref refvel, 3, 10);
             Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y,-10);
+        }
+        if(Triggerfocus && Vector2.Distance(Camera.main.transform.position, FocusGameobject.transform.position) < 4)
+        {
+            Camera.main.GetComponent<zoomPinch>().enabled = true;
+            this.enabled = false;
         }
     }
     public void OnTriggerEnter2D(Collider2D collision)
@@ -27,7 +32,7 @@ public class DialogueTrigger : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             TriggerDialogue();
-            if (focus)
+            if (FocusGameobject != null)
             {
                 Triggerfocus = true;
             }
