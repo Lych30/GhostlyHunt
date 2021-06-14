@@ -14,7 +14,7 @@ public class TheEnd : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.GetComponent<AIPath>().canMove = false;
-            if(gameObject.tag == "LooseZone")
+            if(gameObject.CompareTag("LooseZone"))
             {
                 collision.GetComponent<Animator>().SetTrigger("Crying");
                 collision.GetComponent<Animator>().SetBool("IsCrying",true);

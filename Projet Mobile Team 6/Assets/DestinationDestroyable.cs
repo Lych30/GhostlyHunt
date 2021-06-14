@@ -12,7 +12,7 @@ public class DestinationDestroyable : MonoBehaviour
     {
         coll2d = GetComponent<Collider2D>();
         herocoll2d = GameObject.Find("Hero").GetComponent<Collider2D>();
-        Destroy(gameObject, 15);
+        //Destroy(gameObject, 15);
     }
 
     void Update()
