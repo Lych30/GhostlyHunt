@@ -1782,6 +1782,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432318826488836881, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8432318826488836882, guid: bb111e39c53f85f47835853c43b1d4fc, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -18147,7 +18151,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
