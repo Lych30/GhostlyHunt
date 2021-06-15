@@ -7,12 +7,13 @@ public class DestinationDestroyable : MonoBehaviour
 {
     private Collider2D coll2d;
     private Collider2D herocoll2d;
+    [SerializeField] int duree;
     // Start is called before the first frame update
     void Start()
     {
         coll2d = GetComponent<Collider2D>();
         herocoll2d = GameObject.Find("Hero").GetComponent<Collider2D>();
-        //Destroy(gameObject, 15);
+        Destroy(gameObject, duree);
     }
 
     void Update()
