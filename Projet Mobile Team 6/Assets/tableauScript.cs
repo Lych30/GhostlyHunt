@@ -20,9 +20,9 @@ public class tableauScript : MonoBehaviour
 
     private int touchCount;
     private float TimeTuch = 1f;
-    //Orientation
-    private enum Orientation { UP, LEFT, DOWN, RIGHT }
-    [SerializeField] private Orientation orientation;
+
+    [SerializeField] int DestinationX;
+    [SerializeField] int DestinationY;
 
     // Start is called before the first frame update
     void Start()
@@ -68,29 +68,14 @@ public class tableauScript : MonoBehaviour
                 GameObject.Find("GameManager").GetComponent<GameManager>().UpdateUiText();
                 herocoll2d.gameObject.GetComponent<Animator>().SetTrigger("Fear");
                 GetComponent<Animator>().SetTrigger("Trigger");
-                switch (orientation)
-                {
-
-                    case Orientation.UP:
-                        Ai.SetTarget(Instantiate(Destination, new Vector3(transform.position.x, transform.position.y + 4 * GRIDSIZE), new Quaternion()));
-                        break;
-
-                    case Orientation.DOWN:
-                        Ai.SetTarget(Instantiate(Destination, new Vector3(transform.position.x, transform.position.y - 4 * GRIDSIZE), new Quaternion()));
-                        break;
-
-                    case Orientation.LEFT:
-                        Ai.SetTarget(Instantiate(Destination, new Vector3(transform.position.x - 4 * GRIDSIZE, transform.position.y), new Quaternion()));
-                        break;
-
-                    case Orientation.RIGHT:
-                        Ai.SetTarget(Instantiate(Destination, new Vector3(transform.position.x + 4 * GRIDSIZE, transform.position.y), new Quaternion()));
-                        break;
-
-                    default:
-                        break;
-                }
+                Ai.SetTarget(Instantiate(Destination, new Vector3(transform.position.x + DestinationX * GRIDSIZE, transform.position.y + DestinationY * GRIDSIZE), new Quaternion()));
+                
             }
         }
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(new Vector2(transform.position.x + DestinationX * GRIDSIZE, transform.position.y + DestinationY * GRIDSIZE), 0.5f);
     }
 }
