@@ -44,11 +44,12 @@ public class fireplace : MonoBehaviour
 
     private void OnMouseUpAsButton()
     {
-            touchCount++;
-            if (!used && GameManager.StaticMaxTrap > 0 && touchCount == 2)
-            {
-                StartCoroutine("FlammeTrigger");
-            }
+        touchCount++;
+        if (!used && GameManager.StaticMaxTrap > 0 && touchCount == 2)
+        {
+            Social.ReportProgress("CgkIy8DmhfsXEAIQAg", 1, success => { });
+            StartCoroutine("FlammeTrigger");
+        }
 
     }
     

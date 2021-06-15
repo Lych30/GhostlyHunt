@@ -36,6 +36,7 @@ public class Porte : MonoBehaviour
         touchCount++;
         if (GameManager.StaticMaxKey > 0 && !isUsed && touchCount == 2)
         {
+            Social.ReportProgress("CgkIy8DmhfsXEAIQAg", 1, success => { });
             GameManager.StaticMaxKey--;
             rend.sprite = Ferme;
             rend.material.shader = shaderDefault;

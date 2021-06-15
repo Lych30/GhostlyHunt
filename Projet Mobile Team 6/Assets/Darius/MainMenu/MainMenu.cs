@@ -32,6 +32,11 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    
+    public static void ShowAchivements()
+    {
+        Social.ShowAchievementsUI();
+    }
 
     public void Return()
     {

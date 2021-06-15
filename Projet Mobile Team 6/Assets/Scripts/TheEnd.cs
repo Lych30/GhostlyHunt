@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using UnityEngine.SceneManagement;
+
 
 public class TheEnd : MonoBehaviour
 {
@@ -18,7 +20,8 @@ public class TheEnd : MonoBehaviour
             {
                 collision.GetComponent<Animator>().SetTrigger("Crying");
                 collision.GetComponent<Animator>().SetBool("IsCrying",true);
-                collision.GetComponent<check>().End.Play();
+                Social.ReportProgress("CgkIy8DmhfsXEAIQAQ", 100, success => { });
+                collision.GetComponent<check>().End.Play(); 
             }
             StartCoroutine(Fin());
         }
@@ -27,6 +30,22 @@ public class TheEnd : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         Win.SetActive(true);
+
+        if(SceneManager.GetActiveScene().name == "Tuto")
+        {
+            Social.ReportProgress("CgkIy8DmhfsXEAIQAA", 100, success => { });
+        }
+        
+        if(SceneManager.GetActiveScene().name == "Level1")
+        {
+            Social.ReportProgress("CgkIy8DmhfsXEAIQCw", 100, success => { });
+        }
+        
+        if(SceneManager.GetActiveScene().name == "Level2")
+        {
+            Social.ReportProgress("CgkIy8DmhfsXEAIQDA", 100, success => { });
+        }
+
         UIGame.SetActive(false);
         Time.timeScale = 0;
     }

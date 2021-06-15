@@ -44,6 +44,7 @@ public class clockScript : MonoBehaviour
         touchCount++;
         if (!used && GameManager.StaticMaxManifestation > 0 && touchCount == 2)
         {
+            Social.ReportProgress("CgkIy8DmhfsXEAIQAg", 1, success => { });
             ClockAudio.Play();
             anim.SetTrigger("Trigger");
             used = true;
