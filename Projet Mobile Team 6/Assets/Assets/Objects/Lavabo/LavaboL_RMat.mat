@@ -50,12 +50,12 @@ Material:
     m_Floats:
     - _Alpha: 0.5
     - _EnableExternalAlpha: 0
-    - _OutlineThickness: 1
+    - _OutlineThickness: 0.8
     - _ShowOutline: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColour: {r: 0.33333334, g: 0, b: 0.9843137, a: 1}
+    - _OutlineColour: {r: 0, g: 0, b: 2.1185474, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _Sensitivity: {r: 3, g: 3, b: 0, a: 0}
   m_BuildTextureStacks: []

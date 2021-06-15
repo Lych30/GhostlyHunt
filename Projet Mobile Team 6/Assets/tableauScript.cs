@@ -74,7 +74,7 @@ public class tableauScript : MonoBehaviour
     }
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(new Vector2(transform.position.x + DestinationX * GRIDSIZE, transform.position.y + DestinationY * GRIDSIZE), 0.5f);
     }
 }
