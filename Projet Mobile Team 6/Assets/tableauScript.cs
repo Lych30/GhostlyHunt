@@ -58,6 +58,7 @@ public class tableauScript : MonoBehaviour
             touchCount++;
             if (Ai != null && !used && GameObject.Find("PriorityDestination(Clone)") == null && Physics2D.Distance(coll2d, herocoll2d.GetComponent<Collider2D>()).isOverlapped && GameManager.StaticMaxManifestation > 0 && touchCount == 2)
             {
+                Social.ReportProgress("CgkIy8DmhfsXEAIQAg", 1, success => { });
                 TableauAudio.Play();
                 Handheld.Vibrate();
                 AiPath.maxSpeed = 6;

@@ -41,8 +41,9 @@ public class Piano : MonoBehaviour
     private void OnMouseUpAsButton()
     {
         touchCount++;
-        if (!used && GameManager.StaticMaxManifestation > 0 && touchCount == 2) 
+        if (!used && GameManager.StaticMaxManifestation > 0 && touchCount == 2)
         {
+            Social.ReportProgress("CgkIy8DmhfsXEAIQAg", 1, success => { });
             Rick.Play();
             GameObject.Find("GameManager").GetComponent<AudioSource>().pitch = 0;
             anim.SetTrigger("Trigger");

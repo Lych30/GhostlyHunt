@@ -52,6 +52,7 @@ public class chandelier : MonoBehaviour
             touchCount++;
             if (!used && !Physics2D.Distance(coll2d, herocoll2d.GetComponent<Collider2D>()).isOverlapped && GameManager.StaticMaxTrap > 0 && touchCount == 2)
             {
+                Social.ReportProgress("CgkIy8DmhfsXEAIQAg", 1, success => { });
                 StartCoroutine("tombe");
                 GameManager.StaticMaxTrap--;
                 GameObject.Find("GameManager").GetComponent<GameManager>().UpdateUiText();
