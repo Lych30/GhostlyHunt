@@ -255,7 +255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6229205149028188066, guid: f2a889f6f5a3fec4bbe0470ecf58b8b9, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6229205149028188067, guid: f2a889f6f5a3fec4bbe0470ecf58b8b9, type: 3}
       propertyPath: m_RootOrder
@@ -1657,7 +1657,7 @@ PrefabInstance:
       value: 'We''ll try to bring her in the small bedroom over there.
 
         Follow
-        the black cursor to see where it is : I''m only capable of appearing there.'
+        the blue cursor to see where it is : I''m only capable of appearing there.'
       objectReference: {fileID: 0}
     - target: {fileID: 8531341910781757543, guid: f29eb8eed19106645b694077cbae3caa, type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
@@ -2203,6 +2203,10 @@ PrefabInstance:
     - target: {fileID: 4276144104940417788, guid: c0e0260b15451a3409e4c5393cbf6a73, type: 3}
       propertyPath: m_Name
       value: table_frontP (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6932834173570894938, guid: c0e0260b15451a3409e4c5393cbf6a73, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9063334290002476470, guid: c0e0260b15451a3409e4c5393cbf6a73, type: 3}
       propertyPath: m_RootOrder
@@ -3580,7 +3584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6229205149028188066, guid: f2a889f6f5a3fec4bbe0470ecf58b8b9, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6229205149028188067, guid: f2a889f6f5a3fec4bbe0470ecf58b8b9, type: 3}
       propertyPath: m_RootOrder
