@@ -58,7 +58,6 @@ public class tableauScript : MonoBehaviour
             touchCount++;
             if (Ai != null && !used && GameObject.Find("PriorityDestination(Clone)") == null && Physics2D.Distance(coll2d, herocoll2d.GetComponent<Collider2D>()).isOverlapped && GameManager.StaticMaxManifestation > 0 && touchCount == 2)
             {
-                Social.ReportProgress("CgkIy8DmhfsXEAIQAg", 1, success => { });
                 TableauAudio.Play();
                 Handheld.Vibrate();
                 AiPath.maxSpeed = 6;
@@ -69,7 +68,7 @@ public class tableauScript : MonoBehaviour
                 herocoll2d.gameObject.GetComponent<Animator>().SetTrigger("Fear");
                 GetComponent<Animator>().SetTrigger("Trigger");
                 Ai.SetTarget(Instantiate(Destination, new Vector3(transform.position.x + DestinationX * GRIDSIZE, transform.position.y + DestinationY * GRIDSIZE), new Quaternion()));
-                
+                //Social.ReportProgress("CgkIy8DmhfsXEAIQAg", 1, success => { });
             }
         }
     }
