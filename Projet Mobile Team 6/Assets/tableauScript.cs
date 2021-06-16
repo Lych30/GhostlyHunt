@@ -68,7 +68,7 @@ public class tableauScript : MonoBehaviour
                 herocoll2d.gameObject.GetComponent<Animator>().SetTrigger("Fear");
                 GetComponent<Animator>().SetTrigger("Trigger");
                 Ai.SetTarget(Instantiate(Destination, new Vector3(transform.position.x + DestinationX * GRIDSIZE, transform.position.y + DestinationY * GRIDSIZE), new Quaternion()));
-                //Social.ReportProgress("CgkIy8DmhfsXEAIQAg", 1, success => { });
+                Social.ReportProgress("CgkIy8DmhfsXEAIQAg", 1, success => { });
             }
         }
     }
