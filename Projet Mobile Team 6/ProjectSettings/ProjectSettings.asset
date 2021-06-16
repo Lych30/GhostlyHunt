@@ -239,7 +239,7 @@ PlayerSettings:
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: D:/Projet Mobile/user.keystore
-  AndroidKeyaliasName: 
+  AndroidKeyaliasName: ghostly hunt
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
